@@ -1,0 +1,247 @@
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+.rotate-list-counter {
+    transform: rotate(-12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+.rotate-image {
+    transform: rotate(-10deg);
+}
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+.gradients-linear-blue {
+    background: linear-gradient(blue, white);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial-pink {
+    background: radial-gradient(pink, red);
+    width: 200px;
+    height: 200px;
+}
+.gradients-positioned {
+    background:
+            radial-gradient(at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+.gradients-positioned-2 {
+    background:
+            radial-gradient(at bottom left, pink, yellow);
+    width: 200px;
+    height: 200px;
+    color: deepskyblue;
+}
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }}
+
+.animation-iteration-count {
+    position: relative;
+    top: 0px;
+    animation-duration: 6s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    width: 300px;
+    height: 320px;
+    background-color: pink;
+    color: #61dafb;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 80%;
+        margin-left: 100%;
+        width: 300px;
+        height: 320px;
+        background-color: yellow;
+        color: black;
+    }}
+
+.animation-direction {
+    position: relative;
+    top: 0px;
+    animation-duration: 6s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 300px;
+    height: 320px;
+    background-color: deepskyblue;
+    color: greenyellow;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 80%;
+        margin-left: 100%;
+        width: 300px;
+        height: 320px;
+        background-color: yellow;
+        color: black;
+    }}
+
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+.flex-container-center {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: center
+}
+.flex-container-end {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-container-around {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container-between {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 350px) and (max-width: 500px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+    .media-query {
+        background-color: lightpink;
+        color: dodgerblue;
+    }
+}
+@media (min-width: 500px) and (max-width: 750px) {
+    body {
+        background-color: white;
+        color: black;
+    }
+    .media-query {
+        background-color: lightsalmon;
+        color: darkblue;
+    }
+}
+@media (min-width: 750px) and (max-width: 900px) {
+    body {
+        background-color: white;
+        color: dodgerblue;
+    }
+    .media-query {
+        background-color: greenyellow;
+        color: purple;
+    }
+}
+
+
+
+

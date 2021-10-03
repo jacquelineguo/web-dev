@@ -1,0 +1,162 @@
+.wd-bg-color-black {
+    background-color: black;
+    margin: 0;
+}
+
+.wd-container {
+    border: 1px solid rgb(47, 51, 54);
+    padding: 12px 16px 12px 16px;
+}
+
+.wd-font-white {
+    color: white;
+}
+
+p {
+    font-family: Arial;
+}
+
+#wd-header {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 5px 0px;
+}
+
+#wd-sub-header {
+    color: lightgray;
+    font-size: 13px;
+    margin: 0px;
+}
+
+.wd-handle {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 0px 5px 0px;
+}
+
+.wd-sub-handle {
+    color: lightgray;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.wd-avatar {
+    width: 20%;
+}
+
+.wd-bio-content {
+    width: 80%;
+}
+
+.wd-wrapper {
+    display: flex;
+}
+
+.wd-left {}
+
+.wd-right {
+    margin-left: 12px;
+}
+
+.wd-avatar {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.wd-text {
+    margin-top: 5px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    max-width: 506px;
+    color: lightgray;
+}
+
+.wd-text-icon {
+    margin-left: 12px;
+    color: lightgray;
+}
+
+.wd-text-icon-red {
+    margin-left: 12px;
+    color: lightcoral;
+}
+
+.wd-card {
+    border: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    width: min-content;
+    margin-bottom: 12px;
+}
+
+.wd-rounded-corners-bottom {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.wd-title {
+    color: white;
+    font-size: 15px;
+}
+
+.wd-content {
+    color: lightgray;
+    font-size: 15px;
+}
+
+.wd-card-container {
+    border: lightgray;
+    padding: 12px 12px;
+}
+
+.wd-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.wd-image {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.wd-small-icon {
+    width: 30px;
+}
+
+.wd-icons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-icon-container {
+    display: flex;
+    align-items: center;
+}
+.wd-flex-content-box {
+    display: flex;
+    align-items: start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.wd-flex-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.wd-row-top {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 5px 0px;
+}
+.wd-dot {
+    width: 18px;
+}
+.wd-image-size {
+    width: 13px;
+}
