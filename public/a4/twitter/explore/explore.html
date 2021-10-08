@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+<link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
 <head>
     <meta charset="UTF-8">
@@ -8,128 +9,206 @@
     <link href="explore.css" rel="stylesheet" />
 </head>
 
-<body class="wd-bg-color-black">
-    <div class="wd-bg-color-black wd-font-family-arial">
-        <div class="wd-container">
-            <div class="wd-search">
-                <i id="searchIcon" class="fa fa-search wd-fg-color-gray"></i>
-                <input class="wd-rounded-corners-all-around wd-bg-color-darkgray wd-font-weight-light wd-textfield" type="text" placeholder="Search Twitter" size="50" />
-                <a href="explore-settings.html" class="wd-setting-icon"><i id="gearIcon" class="fa fa-cog "></i></a>
-            </div>
-        </div>
-        <div class="wd-container">
-            <div class="wd-nav-container">
-                <a class="wd-active-nav-tab wd-font-size-15" href="#">
-                    <b>For you</b>
+<body >
+    <div>
+        <div class="container mt-3">
 
-                </a>
-                <a class="wd-other-nav-tab wd-font-size-15" href="#"><b>Trending</b></a>
-                <a class="wd-other-nav-tab wd-font-size-15" href="#"><b>COVID-19</b></a>
-                <a class="wd-other-nav-tab wd-font-size-15" href="#"><b>News</b></a>
-                <a class="wd-other-nav-tab wd-font-size-15" href="#"><b>Sports</b></a>
-                <a class="wd-other-nav-tab wd-font-size-15" href="#"><b>Entertainment</b></a>
-            </div>
+            <div class="row row-cols-3">
+                <div class="col-xxl-3 col-xl-2 col-lg-1 col-md-2 col-sm-2">
+                <div class="list-group">
+                    <a href="#" class="list-group-item "><i class="fab fa-twitter mr-2"></i></a>
+                    <a href="#" class="list-group-item"><div class="d-flex flex-nowrap align-items-center"><i class="fas fa-home mr-3"></i> <span class="ms-1 d-none d-xl-block">Home</span></div></a>
+                    <a href="#" class="list-group-item  active" aria-current="true">
+                        <div class="d-flex flex-nowrap align-items-center">
+                            <i class="fas fa-hashtag mr-3"></i> <span class="ms-1 d-none d-xl-block">Explore</span>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item "><div class="d-flex flex-nowrap align-items-center"><i class="fas fa-bell mr-2"></i> <span class="ms-1 d-none d-xl-block">Notifications</span></div></a>
+                    <a href="#" class="list-group-item "><div class="d-flex flex-nowrap align-items-center"><i class="fas fa-envelope mr-2"></i> <span class="ms-1 d-none d-xl-block">Messages</span></div></a>
+                    <a href="#" class="list-group-item "><div class="d-flex flex-nowrap align-items-center"><i class="fas fa-bookmark mr-2"></i> <span class="ms-1 d-none d-xl-block">Bookmarks</span></div></a>
+                    <a href="#" class="list-group-item "><div class="d-flex flex-nowrap align-items-center"><i class="fas fa-list mr-2"></i> <span class="ms-1 d-none d-xl-block">Lists</span></div></a>
+                    <a href="#" class="list-group-item "><div class="d-flex flex-nowrap align-items-center"><i class="fas fa-user mr-2"></i> <span class="ms-1 d-none d-xl-block">Profile</span></div></a>
+                    <a href="#" class="list-group-item ">
+                        <div class="d-flex flex-nowrap align-items-center">
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-ellipsis-h fa-stack-1x"></i>
+                        </span> <span class="ms-1 d-none d-xl-block">More</span></div></a>
+                </div>
+                <button class="btn btn-primary btn-block mx-auto mt-2" type="button">Tweet</button>
+                </div>
+                <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                    <div class="justify-content-between row align-items-center">
+                        <div class="col">
+                            <div class="form-control-feedback"><i class="fa fa-search"></i></div>
+                            <input class="col form-control border rounded-pill" type="text" placeholder="Search Twitter" id="search-bar">
+                        </div>
+                        <span class="col-1">
+                            <i class="fas fa-cog" style="color: blueviolet;"></i>
+                        </span>
+                    </div>
+                    <ul class="nav nav-tabs mt-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">For you</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-none d-md-block">
+                                <a class="nav-link" href="#">Entertainment</a>
+                            </div>
+                        </li>
+                    </ul>
 
-            <hr id="wd-nav-separator">
-            <div id="wd-spacer" class="wd-bg-color-darkgray"></div>
-        </div>
-        <div class="wd-container">
-            <div class="wd-flex-content-box">
-                <div class="wd-flex-content">
-                    <div class="wd-row-top">
-                        Trending in Science
-                    </div>
-                    <div class="wd-row wd-topic-format">
-                        Starship
-                    </div>
-                    <div class="wd-row">
-                        55.5K Tweets
-                    </div>
-                </div>
-                <img class="wd-dot" src="ellipsis.png" />
-            </div>
-        </div>
-        <div class="wd-container">
-            <div class="wd-flex-content-box">
-                <div class="wd-flex-content">
-                    <div class="wd-row-top">
-                        Sports • Trending
-                    </div>
-                    <div class="wd-row wd-topic-format">
-                        Joe Rogan
-                    </div>
-                    <div class="wd-row">
-                        5,218 Tweets
-                    </div>
-                </div>
-                <img class="wd-dot" src="ellipsis.png" />
-            </div>
-        </div>
-        <div class="wd-container">
-            <div class="wd-flex-content-box">
-                <div class="wd-flex-content">
-                    <div class="wd-row-top wd-float-left">
-                        <img class="wd-image-size" src="https://icon2.cleanpng.com/20180320/ybq/kisspng-brand-logo-font-new-york-times-5ab0d105893d14.3969037715215372855621.jpg"/>
-                        <a class="wd-name-format">New York Times</a>
-                        <i id="checkIcon" class="fa fa-check-circle"></i>
-                        <a class="wd-row-text">• Yesterday</a>
-                    </div>
-                    <div class="wd-row wd-topic-format-2 wd-float-left">
-                        CNN'S Cuomo conundrum: A star anchor with a brother in trouble
-                    </div>
-                </div>
-                <img class="wd-float-right wd-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRhZa_WTXa73tpL0Il8tOIg2P2C9UPUKgBnA&usqp=CAU"
-                />
-            </div>
-        </div>
-        <div class="wd-container">
-            <div class="wd-flex-content-box">
-                <div class="wd-flex-content">
-                    <div class="wd-row-top wd-float-left">
-                        <a class="wd-row-top">COVID-19 • LIVE</a>
-                    </div>
-                    <div class="wd-row wd-topic-format-2 wd-float-left">
-                        COVID-19: News and updates for Massachusetts
-                    </div>
-                </div>
-                <img class="wd-float-right wd-image" src="https://mn.gov/covid19/assets/2-vax-to-school-calendar-square_tcm1148-492072.png"
-                />
-            </div>
-        </div>
-        <div class="wd-container">
-            <div class="wd-flex-content-box">
-                <div class="wd-flex-content">
-                    <div class="wd-row-top wd-float-left">
-                        <img class="wd-image-size" src="https://lh3.googleusercontent.com/d7Gb4iD3pt8CmT6tX83CN0SheAYyGPftEtWXPp4yVEnsF5fIx9fVoolI6XfXf3A879I"/>
-                        <a class="wd-name-format">Bloomberg Opinion</a>
-                        <i id="checkIcon" class="fa fa-check-circle"></i>
-                        <a class="wd-row-text">• Yesterday</a>
-                    </div>
-                    <div class="wd-row wd-topic-format-2 wd-float-left">
-                        Thinking about getting a booster? Read this first.
-                    </div>
-                </div>
-                <img class="wd-float-right wd-image" src="https://www.millbury-ma.org/sites/g/files/vyhlif4706/f/styles/news_image_teaser/public/news/vaccine-square.jpg?itok=Ng6YBMXy"
-                />
-            </div>
-        </div>
-        <div class="wd-container">
-            <div class="wd-flex-content-box">
-                <div class="wd-flex-content">
-                    <div class="wd-row-top">
-                        Trending in United States
-                    </div>
-                    <div class="wd-row wd-topic-format">
-                        Wonder Bread
-                    </div>
-                    <div class="wd-row">
-                        1,259 Tweets
-                    </div>
-                </div>
-                <img class="wd-dot" src="ellipsis.png" />
-            </div>
-        </div>
+                    <div class="card mt-2">
+                        <img src="../starship.jpeg" class="card-img-top" alt="SpaceX's Starship">
 
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="wd-flex-content-box">
+                                    <div class="wd-flex-content">
+                                        <div class="wd-row-top" style="color: dimgrey">
+                                            Web Development
+                                        </div>
+                                        <div class="wd-row wd-float-left">
+                                            <b>ReactJS</b>
+                                            <i class="fas fa-check-circle"></i>
+                                            - 2h
+                                        </div>
+                                        <div class="wd-row wd-topic-format-2 wd-float-left">
+                                            React.js is a component based front end library that makes it very easy to build single page applications or SPAs
+                                        </div>
+
+                                    </div>
+                                    <img class="wd-float-right wd-image" src="../react.png"
+                                    />
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="wd-flex-content-box">
+                                    <div class="wd-flex-content">
+                                        <div class="wd-row-top wd-float-left">
+                                            <b>JavaScript</b>
+                                            <i class="fas fa-check-circle"></i>
+                                            - 2h
+                                        </div>
+                                        <div class="wd-row wd-topic-format-2 wd-float-left">
+                                            JavaScript is programming language that can run on browsers as well as desktops
+                                        </div>
+                                        <div class="wd-row wd-fg-color-gray">
+                                            123K Tweets
+                                        </div>
+
+                                    </div>
+                                    <img class="wd-float-right wd-image" src="../js.png"
+                                    />
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="wd-flex-content-box">
+                                    <div class="wd-flex-content">
+                                        <div class="wd-row-top" style="color: dimgrey">
+                                            Web Development
+                                        </div>
+                                        <div class="wd-row wd-float-left">
+                                            <b>jQuery</b>
+                                        </div>
+                                        <div class="wd-row wd-fg-color-gray">
+                                            123K Tweets
+                                        </div>
+
+                                    </div>
+                                    <img class="wd-float-right wd-image" src="../jquery.png"
+                                    />
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="wd-flex-content-box">
+                                    <div class="wd-flex-content">
+                                        <div class="wd-row-top" style="color: dimgrey">
+                                            Web Development
+                                        </div>
+                                        <div class="wd-row wd-float-left">
+                                            <b>NodeJS</b>
+                                            <i class="fas fa-check-circle"></i>
+                                            - 2h
+                                        </div>
+                                        <div class="wd-row wd-fg-color-gray">
+                                            123K Tweets
+                                        </div>
+
+                                    </div>
+                                    <img class="wd-float-right wd-image" src="../nodejs.png"
+                                    />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item "><b>Who to follow</b></a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            <div><img src="../java.jpeg" style="height:40px; width: 40px" class="img-fluid rounded-circle"/></div>
+                                <div class="ms-3 me-auto">
+                                    <div class="fw-bold">Java  <i class="fas fa-check-circle"></i></div>
+                                    @Java
+                                </div>
+                            <span>
+                                 <button class="btn btn-primary">Follow</button>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            <div><img src="../relativespace.png" style="height:40px" class="img-fluid rounded-circle"/></div>
+                            <div class="ms-3 me-auto">
+                                <div class="fw-bold">Relativity Space  <i class="fas fa-check-circle"></i></div>
+                                @relativityspace
+                            </div>
+                            <span>
+                                 <button class="btn btn-primary">Follow</button>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            <div><img src="../spce.png" style="height:40px" class="img-fluid rounded-circle"/></div>
+                            <div class="ms-3 me-auto">
+                                <div class="fw-bold">Virgin Galactic  <i class="fas fa-check-circle"></i></div>
+                                @virgingalactic
+                            </div>
+                            <span>
+                                 <button class="btn btn-primary">Follow</button>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            <div><img src="../nasa.png" style="height:40px" class="img-fluid rounded-circle"/></div>
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">NASA  <i class="fas fa-check-circle"></i></div>
+                                @NASA
+                            </div>
+                            <span>
+                                 <button class="btn btn-primary">Follow</button>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            <div><img src="../tesla.png" style="height:40px" class="img-fluid rounded-circle"/></div>
+                            <div class="ms-3 me-auto">
+                                <div class="fw-bold">Tesla  <i class="fas fa-check-circle"></i></div>
+                                @Tesla
+                            </div>
+                            <span>
+                                 <button class="btn btn-primary">Follow</button>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>

@@ -1,3 +1,34 @@
+.form-control-feedback{
+    position: absolute;
+    height: 35px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    padding-left: 35px;
+    margin-right: 40px;
+}
+
+.fa-ellipsis-h {
+    color: white;
+}
+
+.fa-stack {
+    font-size: 0.5em;
+}
+
+.btn {
+    min-width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.nowrap {
+    white-space: nowrap;
+}
 .wd-bg-color-black {
     background-color: black;
     margin: 0;
@@ -109,20 +140,19 @@ a:active {
 }
 
 .wd-row-top {
-    color: rgb(110, 118, 125);
     font-size: 13px;
 }
 
 .wd-row-text {
-    color: rgb(110, 118, 125);
+    /*color: rgb(110, 118, 125);*/
     font-size: 13px;
     margin-left: 5px;
 }
 
 .wd-row {
-    color: rgb(110, 118, 125);
+    /*color: rgb(110, 118, 125);*/
     font-size: 13px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .wd-topic-format {
@@ -155,16 +185,13 @@ a:active {
 }
 
 .wd-topic-format-2 {
-    color: lightgray;
+    /*color: lightgray;*/
     font-weight: bolder;
     font-size: 16px;
     margin-top: 6px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
-.wd-float-left {
-    float: left;
-}
 
 .wd-float-right {
     float: right;
@@ -210,8 +237,8 @@ a:active {
 .wd-flex-content-box {
     display: flex;
     align-items: start;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .wd-flex-content {
