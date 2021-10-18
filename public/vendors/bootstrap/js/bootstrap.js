@@ -31,7 +31,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): util/index.js
+   * Bootstrap (v5.1.2): util/NavigationSidebar.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
