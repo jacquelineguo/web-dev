@@ -16,7 +16,7 @@ function App() {
           <Route path="/a6/hello" exact={true}>
             <HelloWorld/>
           </Route>
-          <Route path={["/", "/a6", "/a6/practice"]} exact={true}>
+          <Route path={["/a6/practice"]} exact={true}>
             <Index1/>
           </Route>
           <Route path="/a6/Build/index" exact={true}>
