@@ -16,8 +16,9 @@ import {combineReducers, createStore} from "redux";
 import tweets from "./reducers/tweets";
 import profile from "./reducers/profile";
 import ProfileScreen from "./components/a7/twitter/profile/ProfileScreen";
+import profileData from "./reducers/profileData";
 
-const reducer = combineReducers({tweets: tweets, who, profile})
+const reducer = combineReducers({tweets: tweets, who, profile, profileData})
 const store = createStore(reducer);
 
 

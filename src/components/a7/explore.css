@@ -1,11 +1,14 @@
 .nav-link {
     color: grey;
 }
+.edit-profile {
+    background-color: black!important;
+    border: 1px solid grey;
+    color: white;
+}
 
 .banner-img {
-    padding-left: 0px;
-    padding-right: 0px;
-    width:100%;
+    max-width: 100%;
 }
 .profile-img {
     position: absolute;

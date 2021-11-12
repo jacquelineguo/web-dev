@@ -1,39 +1,50 @@
 import React from "react";
+import {useSelector} from "react-redux";
+
+const selectAllProfiles = (state) => state.profileData;
 
 const ProfileStats = () => {
+  const profileData = useSelector(selectAllProfiles);
   return (
       <>
-        <div className="flex-row mt-2 d-flex justify-content-start">
-          <div className="flex-column pe-2 justify-content-around">
-            <i className="far fa-comment me-2"></i>
-            location
+        <div className="flex-row mt-2 d-flex justify-content-start wd-color-dimgrey">
+          <div className="flex-column pe-2 justify-content-around ">
+            <i className="fa fa-map-marked-alt me-2"></i>
+            {profileData.location}
           </div>
           <div className="flex-column pe-2 justify-content-around">
-            <i className="fas fa-retweet me-2"></i>
-            dateOfBirth
+            <i className="fas fa-birthday-cake me-2"></i>
+            {profileData.dateOfBirth}
           </div>
           <div className="flex-column pe-2 justify-content-around">
-            <i className="fas fa-external-link-alt me-2"></i>
-            dateJoined
+            <i className="fas fa-calendar-alt me-2"></i>
+            {profileData.dateJoined}
           </div>
         </div></>
   )
 }
 
 const FollowStats = () => {
+  const profileData = useSelector(selectAllProfiles);
   return (
       <> <div className="flex-row mt-2 d-flex justify-content-start">
         <div className="flex-column pe-2 justify-content-around">
-          followingCount following
+          {profileData.followingCount}
+          <span className="wd-color-dimgrey">Following</span>
         </div>
         <div className="flex-column pe-2 justify-content-around">
-          followersCount followers
+          {profileData.followersCount}
+          <span className="wd-color-dimgrey">Follower</span>
         </div>
       </div></>
   )
 }
 
-const ProfileBar = () => {
+const ProfileBar = (
+    props
+) => {
+  const profileData = useSelector(selectAllProfiles);
+
   return (
       <>
         <ul className="list-group">
@@ -41,33 +52,36 @@ const ProfileBar = () => {
                     <div><i className="fa fa-arrow-circle-left"></i></div>
 
             <div className={'ms-3 me-auto'}>
-                      <div><h5 className="fw-bolder">Pikachu G</h5></div>
-                      <div className="wd-color-dimgrey">123 Tweets</div>
+                      <div><h5 className="fw-bolder">{profileData.firstName} {profileData.lastName}</h5></div>
+                      <div className="wd-color-dimgrey">3,660 Tweets</div>
               </div>
           </li>
 
           <li className="list-group-item p-0">
-            <div className="col-md-4 px-0">
-            <img src="/image/background.png"/>
+            <div>
+            <img src={profileData.bannerPicture} className="banner-img"/>
             </div>
           </li>
 
           <li className="list-group-item">
             <div className="profile-img">
-              <img src="/image/jojo.jpg" className={'rounded-circle profile-img'} style={{
+              <img src={profileData.profilePicture} className={'rounded-circle profile-img'} style={{
                 "border": "5px solid black"}}/>
             </div>
             <div className="float-end" >
-              <a href="tweet.html"
-                 className="btn btn-secondary btn-block rounded-pill wd-bg-color-black">
+              <a className="btn btn-secondary btn-block rounded-pill wd-bg-color-black"
+              onClick={props.editProfileHandler}>
                 Edit Profile
               </a>
             </div>
             <div style={{"height":"50px"}}></div>
-            <h5 className="fw-bolder">pp guo</h5>
-            <div>@poguo</div>
+            <h5 className="fw-bolder">{profileData.firstName} {profileData.lastName}</h5>
+            <div className="wd-color-dimgrey">@{profileData.handle}</div>
             <div>
-              profile.bio
+              {profileData.bio}
+            </div>
+            <div className="wd-color-dimgrey">
+              Website: {profileData.website}
             </div>
             <div>
               {ProfileStats()}
