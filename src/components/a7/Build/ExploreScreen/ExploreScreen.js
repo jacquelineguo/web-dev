@@ -1,13 +1,13 @@
-import NavigationSidebar from "../NavigationSidebar/NavigationSidebar";
+import NavigationSidebar from "../NavigationSidebar/index";
 import ExploreComponent from "./ExploreComponent";
 import WhoToFollowList from "../WhoToFollowList/WhoToFollowList";
-const ExploreScreen6 = ({}) => {
+const ExploreScreen = ({}) => {
   return (
       <>
       <div className="container mt-3">
         <div className="row row-cols-3">
           <div className="col-xxl-3 col-xl-2 col-lg-1 col-md-2 col-sm-2">
-            {NavigationSidebar("explore")}
+            {NavigationSidebar('explore')}
           </div>
           <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-10 col-sm-10">
             {ExploreComponent()}
@@ -20,4 +20,4 @@ const ExploreScreen6 = ({}) => {
       </>
   );
 }
-export default ExploreScreen6;
+export default ExploreScreen;

@@ -1,8 +1,9 @@
-import NavigationSidebar from "../NavigationSidebar/NavigationSidebar";
+import NavigationSidebar from "../NavigationSidebar/index";
 import PostList from "../PostList/PostList";
-import ExploreComponent from "../ExploreScreen/ExploreComponent";
+import PostSummaryList from "../PostSummaryList/index";
 
-const HomeScreen6 = () => {
+const HomeScreen = (
+) => {
   return (
       <>
         <div className="container mt-3">
@@ -14,7 +15,7 @@ const HomeScreen6 = () => {
               {PostList()}
             </div>
             <div className="col-xxl-5 col-xl-5 col-lg-5 d-none d-lg-block">
-              {ExploreComponent()}
+              <PostSummaryList itemName={"home"}/>
             </div>
           </div>
         </div>
@@ -22,4 +23,4 @@ const HomeScreen6 = () => {
   )
 }
 
-export default HomeScreen6;
+export default HomeScreen;
