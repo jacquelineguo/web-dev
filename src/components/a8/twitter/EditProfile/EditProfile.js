@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-
+import {updateCurrentProfile} from '../../../../services/profileService'
 const selectAllProfiles = (state) => state.profileData;
 
 const EditProfile = ( props ) => {
@@ -23,7 +23,8 @@ const EditProfile = ( props ) => {
         dateOfBirth: birthDate
       }
     };
-    dispatch(action);
+    // dispatch(action);
+    updateCurrentProfile(dispatch, action.profileData);
     props.backHandler();
   }
 

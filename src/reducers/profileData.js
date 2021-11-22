@@ -13,9 +13,13 @@ const data = {
 // }
 
 const profileData = (state = data, action) => {
+
   switch (action.type) {
+    case 'fetch-current-profile':
+      return action.profileData
+      break;
     case 'update-profile':
-      return action.profileData;
+      return action.profileData
     default:
       return (state);
   };

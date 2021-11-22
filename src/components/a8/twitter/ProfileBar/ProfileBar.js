@@ -1,10 +1,14 @@
-import React from "react";
-import {useSelector} from "react-redux";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {fetchCurrentProfile} from "../../../../services/profileService";
 
 const selectAllProfiles = (state) => state.profileData;
 
 const ProfileStats = () => {
   const profileData = useSelector(selectAllProfiles);
+  const dispatch = useDispatch();
+  useEffect(() => fetchCurrentProfile(dispatch), [])
+  console.log(profileData);
   return (
       <>
         <div className="flex-row mt-2 d-flex justify-content-start wd-color-dimgrey">

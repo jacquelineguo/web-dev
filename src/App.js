@@ -5,8 +5,10 @@ import Practice from "./components/a7/Practice/practice"
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/fontawesome.min.css';
-import ExploreScreen from "./components/a8/Build/ExploreScreen/ExploreScreen";
-import HomeScreen from "./components/a8/Build/HomeScreen/index";
+import ExploreScreen7 from "./components/a7/Build/ExploreScreen/ExploreScreen";
+import HomeScreen7 from "./components/a7/Build/HomeScreen/index";
+import ExploreScreen8 from "./components/a8/Build/ExploreScreen/ExploreScreen";
+import HomeScreen8 from "./components/a8/Build/HomeScreen/index";
 import HomeScreen6 from "./components/a6/Build/HomeScreen/HomeScreen";
 import ExploreScreen6 from "./components/a6/Build/ExploreScreen/ExploreScreen";
 
@@ -15,7 +17,8 @@ import who from "./reducers/who";
 import {combineReducers, createStore} from "redux";
 import tweets from "./reducers/tweets";
 import profile from "./reducers/profile";
-import ProfileScreen from "./components/a7/twitter/profile/ProfileScreen";
+import ProfileScreen7 from "./components/a7/twitter/profile/ProfileScreen";
+import ProfileScreen8 from "./components/a8/twitter/profile/ProfileScreen";
 import profileData from "./reducers/profileData";
 import Practice1 from "./components/a8/Practice/practice"
 
@@ -32,25 +35,25 @@ function App() {
               <Practice1/>
             </Route>
             <Route path={["/a8/twitter/home"]} exact={true}>
-              <HomeScreen/>
+              <HomeScreen8/>
             </Route>
             <Route path={["/a8/twitter/explore"]} exact={true}>
-              <ExploreScreen/>
+              <ExploreScreen8/>
             </Route>
             <Route path={["/a8/twitter/profile"]} exact={true}>
-              <ProfileScreen/>
+              <ProfileScreen8/>
             </Route>
             <Route path={["/a7/practice"]} exact={true}>
               <Practice/>
             </Route>
             <Route path={["/a7/twitter/home"]} exact={true}>
-              <HomeScreen/>
+              <HomeScreen7/>
             </Route>
             <Route path={["/a7/twitter/explore"]} exact={true}>
-              <ExploreScreen/>
+              <ExploreScreen7/>
             </Route>
             <Route path={["/a7/twitter/profile"]} exact={true}>
-              <ProfileScreen/>
+              <ProfileScreen7/>
             </Route>
             <Route path={["/a6/practice"]} exact={true}>
               <Index1/>
