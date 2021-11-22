@@ -1,4 +1,8 @@
-const TWEET_API = 'http://localhost:4000/api/tweets';
+let TWEET_API = 'http://localhost:4000/api/tweets';
+console.log(process.env.NODE_ENV);
+if (process.env.NODE_ENV !== 'development') {
+  TWEET_API = 'https://web-dev-node-xuan.herokuapp.com/api/tweets'
+}
 
 export const fetchAllTweets = (dispatch) =>
     fetch(TWEET_API)
