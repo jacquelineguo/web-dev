@@ -1,6 +1,5 @@
 import {BrowserRouter, Route} from "react-router-dom";
 import Index1 from "./components/a6/Practice/index";
-import Index from "./components/a6/Build/index";
 import Practice from "./components/a7/Practice/practice"
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
@@ -21,6 +20,11 @@ import ProfileScreen7 from "./components/a7/twitter/profile/ProfileScreen";
 import ProfileScreen8 from "./components/a8/twitter/profile/ProfileScreen";
 import profileData from "./reducers/profileData";
 import Practice1 from "./components/a8/Practice/practice"
+import Practice9 from "./components/a9/Practice/practice"
+import ProfileScreen9 from "./components/a9/twitter/profile/ProfileScreen";
+import HomeScreen9 from "./components/a9/Build/HomeScreen/index";
+import ExploreScreen9 from "./components/a9/Build/ExploreScreen/ExploreScreen";
+
 
 const reducer = combineReducers({tweets: tweets, who, profile, profileData})
 const store = createStore(reducer);
@@ -31,6 +35,18 @@ function App() {
       <BrowserRouter>
         <Provider store={store}>
           <div className="container">
+            <Route path={["/a9/practice"]} exact={true}>
+              <Practice9/>
+            </Route>
+            <Route path={["/a9/twitter/home"]} exact={true}>
+              <HomeScreen9/>
+            </Route>
+            <Route path={["/a9/twitter/explore"]} exact={true}>
+              <ExploreScreen9/>
+            </Route>
+            <Route path={["/a9/twitter/profile"]} exact={true}>
+              <ProfileScreen9/>
+            </Route>
             <Route path={["/a8/practice"]} exact={true}>
               <Practice1/>
             </Route>
