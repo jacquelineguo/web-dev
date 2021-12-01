@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
 import WhoToFollowListItem from "./WhoToFollowListItem";
 // import who from "../../data/who.json"
-import {useSelector} from "react-redux";
+import {fetchWhoToFollowList} from "../../../../services/whoService";
 
 const WhoToFollowList = () => {
   const who = useSelector((state) => state.who);
+  const dispatch = useDispatch();
+  useEffect(() => fetchWhoToFollowList(dispatch), [])
   return (
       <>
         <div className={'list-group bg-dark'}>
